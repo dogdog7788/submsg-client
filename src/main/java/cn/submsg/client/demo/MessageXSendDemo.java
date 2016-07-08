@@ -11,7 +11,7 @@ import cn.submsg.client.util.SubMsgSendUtils;
 public class MessageXSendDemo {
 
 	public static void main(String[] args) {
-		String to = "18516632554";
+		String to = "15919820372";
 		String tempId = "sUb981";
 		String date = DateFormatUtils.format(new Date(), "yyyy-MM-dd");
 		Map<String,String> param = new HashMap<String,String>();
