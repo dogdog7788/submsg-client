@@ -14,8 +14,8 @@ import cn.submsg.client.lib.base.Sender;
  * @version 1.0 at 2014/10/28
  * */
 public class Message extends Sender {
-
-	private static final String API_XSEND = "http://api.submsg.cn/message/xsend.json";
+    public static final String API_ROOT = "http://120.25.220.65";
+	private static final String API_XSEND = API_ROOT+"/message/xsend.json";
 
 	public Message(AppConfig config) {
 		this.config = config;

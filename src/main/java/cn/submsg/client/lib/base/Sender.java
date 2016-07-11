@@ -34,7 +34,7 @@ import cn.submsg.client.util.RequestEncoder;
 public class Sender implements ISender {
 
 	protected AppConfig config = null;
-	private static final String API_TIMESTAMP = "http://api.submsg.cn/service/timestamp.json";
+	private static final String API_TIMESTAMP = Message.API_ROOT+"/service/timestamp.json";
 	public static final String APPID = "appid";
 	public static final String TIMESTAMP = "timestamp";
 	public static final String SIGN_TYPE = "sign_type";

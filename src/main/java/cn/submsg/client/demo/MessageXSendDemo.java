@@ -12,13 +12,22 @@ public class MessageXSendDemo {
 
 	public static void main(String[] args) {
 		String to = "15919820372";
-		String tempId = "sUb981";
-		String date = DateFormatUtils.format(new Date(), "yyyy-MM-dd");
 		Map<String,String> param = new HashMap<String,String>();
-		param.put("name", "潮哥");
-		param.put("numStr", "20");
-		param.put("userName", "dogdog7788");
-		param.put("date", date);
+//		String tempId = "sUb981";
+//		String date = DateFormatUtils.format(new Date(), "yyyy-MM-dd");
+//		param.put("name", "潮哥");
+//		param.put("numStr", "20");
+//		param.put("userName", "dogdog7788");
+//		param.put("date", date);
+		
+//		String tempId = "BlQ9X"; 
+//		String tempId = "R630D1";
+//		String tempId = "WKkt32";
+		
+		String tempId = "NFgnN3";
+		param.put("userName", "ddbk789");
+		param.put("op", "卖出积分");
+		param.put("code", "125356");
 		SubMsgSendUtils.sendMessage(to, tempId, param);
 	}	
 }
