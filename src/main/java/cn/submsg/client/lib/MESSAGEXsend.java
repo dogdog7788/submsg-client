@@ -15,6 +15,7 @@ public class MESSAGEXsend extends SenderWapper {
 	public static final String TO = "to";
 	public static final String TEMPID = "tempid";
 	public static final String VARS = "vars";
+	public static final String REGION_CODE = "region_code";
 
 	public MESSAGEXsend(AppConfig config) {
 		this.config = config;
@@ -33,6 +34,10 @@ public class MESSAGEXsend extends SenderWapper {
 		requestData.addWithJson(VARS, key, val);
 	}
 	
+	public void addRegionCode(String regionCode) {
+		requestData.put(REGION_CODE, regionCode);
+	}
+	
 	@Override
 	public ISender getSender() {
 		return new Message(this.config);
@@ -41,4 +46,9 @@ public class MESSAGEXsend extends SenderWapper {
 	public boolean xsend(){
 		return getSender().xsend(requestData);
 	}
+	
+	public boolean interNationalXsend(){
+		return getSender().internationalXsend(requestData);
+	}
+	
 }

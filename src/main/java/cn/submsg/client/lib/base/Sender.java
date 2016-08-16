@@ -207,4 +207,8 @@ public class Sender implements ISender {
 		}
 		return builder.build();
 	}
+	@Override
+	public boolean internationalXsend(Map<String, Object> data) {
+		return false;
+	}
 }
