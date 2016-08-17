@@ -1,6 +1,5 @@
 package cn.submsg.client.util;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -11,9 +10,9 @@ public class SubMsgSendUtils {
 	
 	/**
 	 * 国内短信
-	 * @param to
-	 * @param tempId
-	 * @param param
+	 * @param to      手机号码
+	 * @param tempId  模板Id
+	 * @param param   模板中的参数变量及值
 	 * @return
 	 */
 	public static boolean sendMessage(String to,String tempId,Map<String,String> param){
@@ -56,13 +55,5 @@ public class SubMsgSendUtils {
 			return true;
 		}
 	}
-	
-	
-	public static void main(String[] args) {
-		Map<String,String> param = new HashMap<String,String>();
-		param.put("code", "1234567");
-//		SubMsgSendUtils.sendMessage("15919820372", "sUb981", param);
-//		SubMsgSendUtils.sendInternationalMessage("93","15919820372", "sUb981", param);
-//		SubMsgSendUtils.sendInternationalMessage("93","15919820372", "sUb981", param);
-	}
+
 }
