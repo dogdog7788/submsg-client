@@ -19,8 +19,8 @@ public class SubMsgSendUtils {
 		AppConfig config = ConfigLoader.load();
 		if(config.isOpen()){
 			MESSAGEXsend submsg = new MESSAGEXsend(config);
-			submsg.addTo(to);
-			submsg.setTempId(tempId);
+			submsg.addTo(to.trim());
+			submsg.setTempId(tempId.trim());
 			for(Entry<String,String> entity:param.entrySet()){
 				submsg.addVar(entity.getKey(),entity.getValue());
 			}
@@ -43,9 +43,9 @@ public class SubMsgSendUtils {
 		AppConfig config = ConfigLoader.load();
 		if(config.isOpen()){
 			MESSAGEXsend submsg = new MESSAGEXsend(config);
-			submsg.addRegionCode(regionCode);
-			submsg.addTo(to);
-			submsg.setTempId(tempId);
+			submsg.addRegionCode(regionCode.trim());
+			submsg.addTo(to.trim());
+			submsg.setTempId(tempId.trim());
 			for(Entry<String,String> entity:param.entrySet()){
 				submsg.addVar(entity.getKey(),entity.getValue());
 			}
