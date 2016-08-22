@@ -10,8 +10,8 @@ public class MessageXSendDemo {
 		Map<String,String> param = new HashMap<String,String>();
 		param.put("code", "156872");
 		//发送国内短信  第一个参数为 手机号码  第二个参数为 模板ID  第四个参数为 模板中的变量参数与值
-		SubMsgSendUtils.sendMessage("18920652358", "1mg1O", param);
+		SubMsgSendUtils.sendMessage("18920652358", "8QB23", param);
 		//发送国内短信 第一个参数为国家代码 如86代表中国，第二个参数为手机号码  第三个参数为模板ID，第四个参数为 模板中的变量参数与值
-		SubMsgSendUtils.sendInternationalMessage("93","18920652358", "sUb981", param);
+		SubMsgSendUtils.sendInternationalMessage("93","18920652358", "22UHY7", param);
 	}	
 }
